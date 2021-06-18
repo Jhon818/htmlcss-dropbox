@@ -1,0 +1,22 @@
+*{
+    margin-top: 0% auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* header left and right */
+.hdr1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hdr1{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.hdr-left{
+    float: left;
+}
