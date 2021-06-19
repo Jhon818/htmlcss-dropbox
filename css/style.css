@@ -18,9 +18,13 @@ body{
 .hdr1{
     position: fixed;
     padding: 10px;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     background-color: white;
+    z-index: 1;
 }
+
+
 
 .hdr1 > img{
     float: left;
@@ -44,6 +48,10 @@ body{
 }
 
 /* header  span */
+.section{
+    float: left;
+}
+
 section span{
     padding: 10px;
     vertical-align: middle;
@@ -52,7 +60,8 @@ section span{
 
 /* section main */
 .main1{
-  width: 100%;
+  margin: 0% auto;
+  width: 80%;
   height: 600px;
   background-color:#6d82a3;
 }
@@ -60,7 +69,7 @@ section span{
 .main1 > span{
     position: absolute;
     top: 150px;
-    left: 100px;
+    left: 150px;
     color: black;
     font-weight: bolder;
     font-size: 50px;
@@ -119,9 +128,10 @@ div > span{
 }
 
 .block1  img{
-    position: absolute;
-    right: 50px;
-    bottom: 0;
+    position: relative;
+    float: left;
+    top: 300px;
+    left: 100px;
     height: 350px; 
 }
 
@@ -138,10 +148,7 @@ div > span{
  }
  .container div{
      top: 20%;
-     width:80%;
      left: 20%;
-     position: relative;
-     height: 100px;
  }
 
  .content-hdr > span{
@@ -157,22 +164,30 @@ div > span{
     display: block;
     top: 100px;
  }
+ 
 
  .col{
      position: relative;
-     display: inline-block;
-     width: 300px;
+     width: 250px;
+     height: 500px;
      background-color: red;
-     top: 250px;
+     top: 500px;
      left: 35%;
      transform: translate(-50% , -50%);
      margin: 20px;
+     border: 1px solid grey;
  }
 
- .head-singol> i {
-     
-     text-align: center;
- }
+.head-symbol{
+    position: relative;
+    height: 50px;
+    top: 100px;
+}
+
+.col-text > span{
+   display: inline-block;
+}
+
  
  aside.colum1{
      float: left;
@@ -185,4 +200,10 @@ div > span{
 aside.colum3{
     float: left;
 }
+
+
+aside.dive span{
+    text-align: center;
+}
+
 
