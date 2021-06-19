@@ -114,7 +114,6 @@ section span{
 div{
     position: relative;
     top: 200px;
-    left: 50px;
 }
 
 br + p{
@@ -147,14 +146,16 @@ div > span{
      height: 600px;
  }
  .container div{
-     top: 20%;
-     left: 20%;
+     top: 5%;
+     left: 18%;
+     
  }
 
  .content-hdr > span{
+     padding-top: 70px;
      width: 100%;
-     font-size: 40px;
-     position: absolute;
+     display: inline-block;
+     font-size: 30px;
      font-weight: 700;
  }
 
@@ -162,30 +163,48 @@ div > span{
  form{
     position: relative;
     display: block;
-    top: 100px;
+    top: 50px;
  }
- 
+ /* Form radio */
+
 
  .col{
      position: relative;
      width: 250px;
-     height: 500px;
-     background-color: red;
-     top: 500px;
+     background-color: white;
+     top: 450px;
      left: 35%;
      transform: translate(-50% , -50%);
      margin: 20px;
-     border: 1px solid grey;
+     border: 1px solid rgba(117, 115, 115);
+     padding-bottom: 100px;
+     margin-top: 150px;
  }
 
+ .col > button{
+     margin-top: 20px;
+     padding: 5px 15px 5px 15px;
+     background-color: royalblue;
+     border: 1px solid royalblue;
+     color: white;
+     margin-left: 35px;
+ }
+ 
+
+ 
 .head-symbol{
     position: relative;
-    height: 50px;
-    top: 100px;
+    border-bottom: 1px solid black;
+    width: 100%; 
+    height: 30px;
+    text-align: center;
+    padding: 5px;
 }
 
-.col-text > span{
+.col > span{
    display: inline-block;
+   margin-top: 20px;
+   margin-left: 30px;
 }
 
  
@@ -201,9 +220,38 @@ aside.colum3{
     float: left;
 }
 
-
 aside.dive span{
     text-align: center;
 }
 
+aside span:nth-last-child(5){
+    font-weight:bold;
+}
 
+.col span > p{
+    color: grey;
+    font-size: 15px;
+}
+
+i.fas.fa-check{
+    color: blue;
+    margin-right: 5px;
+}
+
+i.far.fa-folder{
+    margin-right: 5px;
+}
+
+i.fas.fa-pen{
+    margin-right: 5px;
+}
+
+.head-symbol + span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.col  a{
+  text-decoration: none;
+  color:#32a8a0;
+}
