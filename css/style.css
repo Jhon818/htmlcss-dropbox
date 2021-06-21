@@ -1,5 +1,5 @@
 *{
-    margin-top: 0% auto;
+    margin: 0% auto;
     padding: 0%;
     box-sizing: border-box;
 }
@@ -50,119 +50,179 @@ body{
     float: left;
 }
 
-section span{
+aside span{
     padding: 10px;
     vertical-align: middle;
 }
 /*/ header left and right */
 
-/* section main */
+/* section1 con background  */
 .section1{
-  margin: 0% auto;
- 
+    width: 100%;
+    height: 600px;
+    background-color: #32a8a0;
+
 }
+/* /section1 con background  */
 
-.section1 > span{
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    color: black;
-    font-weight: bolder;
-    font-size: 50px;
-}
-
-#testo1{
-  top: 80px;
-  display: inline-block;
-  font-size: 15px;
-  margin-left: 160px;
-  width: 300px;
-}
-
-.button{
-    display: block;
-    border: 1px solid royalblue;
-    background-color: royalblue;
-    padding: 3px 10px 3px 10px;
-    color:  white;
-    margin-top: 20px;
-}
-
-.fas.fa-arrow-down{
-    font-size: 30px;
-    text-align: left;
-}
-
-
-
-.section > span{
-      width: 300px; 
-      height: 100px;
-}
-
- br + span{
-     margin-left: 50px;
- }
-
- 
-div{
+/* testi nel banner */
+.container-testo1{
     position: relative;
-    top: 200px;
+    display: inline-block;
+    background-color: red;
+    width: 100%;
+    height: 50px;
 }
 
-br + p{
-    margin-left: 50px;
-    font-size: 30px;
+.testo1{
+    position: absolute;
+    margin-top: 85px;
+    width: 75%;
+    font-weight: bold;
+    font-size: 60px;
+    top: 50%;
+    left: 10%;
 }
 
-
-div > span{
-    width: 300px;
+#testo{
+    margin-top: 80px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 5px;
 }
 
 .block1{
-    width: 100%;
-    height: 600px;
-    background-color:#6d82a3;
+    position: relative;
+    top:200px ;
+    width: 30%;
+    margin-left: 130px;
+    padding: 5px;
 }
 
-.block1  img{
+.block1 button{
+    padding: 3px 15px 3px 15px;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+    margin-top: 30px;
+}
+
+.bottom-text{
+    position: relative;
+    margin-top: 10px;
+}
+
+.fas.fa-arrow-down{
+    font-size: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.img-banner{
     position: absolute;
-    float: left;
-    margin-left: 50px;
-    bottom: -80px;
-    height: 350px; 
+    bottom: -120px;
+    left: 500px;
+}
+.img-banner img{
+    height: 350px;
+}
+/*/ testi nel banner */
+
+
+/* form e testo */
+
+#content-hdr {
+    position: relative;
+    top: 350px;
+    left: 20%;
+    height: 50px;
+    width: 100%;
 }
 
-/* second main */
- 
-.clearfix{
-    content: "";
-    display: table;
-    clear: both;
+#content-hdr > span {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
 }
- .container{
-     width: 80%;   
- }
 
- /* testo piano Dropbox */
-  
- /* form e testo */
- .content-hdr{
-     padding-bottom: 20px;
-     width: 100%;
-     padding-left: 170px;
- }
 
- .content-hdr span{
-     position: relative;
-     width: 100%;
-     display: inline-block;
-     font-size: 30px;
-     font-weight: 700;
- }
+form{
+    position: absolute;
+    margin-top: 10px;
 
- 
+}
+/* form e testo */
+
+/* colums */
+.content{
+    position: relative;
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 80px;
+    width:70%;
+    height: 500px;
+}
+/*/ colums */
+
+.col4{
+    position: relative;
+    display: inline-block;
+    width:100%;
+    height: 100px;
+    margin-top: 100px;
+    border: 1px solid grey;
+    left: 15%;
+}
+
+.col4 span{
+    display: block;
+    padding: 10px;
+}
+
+
+.col4 span:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.col4 span:nth-child(2){
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.col4 span:nth-child(3){
+    font-size: 15px;
+}
+
+.col4  button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 20px;
+    color: white;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 3px 10px 3px 10px;
+}
+
+.cont-4{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
  .col{
@@ -259,15 +319,6 @@ i.fas.fa-pen{
 }
 
 
-.col4{
-    position: relative;
-    display: inline-block;
-    height: 100px;
-    width: 80%;
-    margin-top: 100px;
-    left: 50%;
-    background-color: red;
-}
 
 
 
@@ -277,50 +328,7 @@ i.fas.fa-pen{
 
 
 
-/* container bottom */
-.container-bottom{
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
-    height: 20vh;
-}
 
-.bottom{
-    margin-top: 30px;
-    width: 80%;
-    float: left;
-    border: 1px solid grey;
-}
-
-.bottom span{
-    width: 100%;
-    display: block;
-    margin-left: 20px;
-}
-
-
-.bottom span:nth-child(3){
-    font-size: 15px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.bottom span:last-child{
-  width: 100%;
-}
-
-.bottom button{
-    position: relative;
-    float: left;
-    top: 0%;
-    right: 0%;
-    padding: 5px 15px 5px 15px;
-    background-color: royalblue;
-    border: 1px solid royalblue;
-    color: white;
-}
-
-/* terzo blocco */
 
 
 
