@@ -68,7 +68,7 @@ aside span{
 /* testi nel banner */
 .container-testo1{
     position: relative;
-    display: inline-block;
+    float: left;
     background-color: red;
     width: 100%;
     height: 50px;
@@ -446,56 +446,182 @@ i.fas.fa-pen{
 
 .row{
     width: 100%;
-    background-color: red;
-    height: 400px;
 }
 
 .col-side-sx{
     float: left;
     width: 30vw;
     height: 30vw;
-    filter: invert(1);
 }
 
 .green{
-    position: relative;
-    top: 50px;
+    float: left;
+    background-color: green;
+   
+    vertical-align: middle;
+    height: 15vw;
+    width: 15vw;
 }
 
 .purple{
-    position: relative;
-    top: 50px;  
+    float: left;
+    text-align: center;
+    background-color: purple;
+    height: 15vw;
+    width: 15vw;
 }
 
 .purple img{
-    height: 40px;
     width: 60%;
+    line-height: 100px;
+    filter: invert(1);
 }
 
 .green img{
     height: 40px;
     width: 60%;
-}
-
-.col-side-c{
-    float: left;
-    width: 40%;  width: 30vw;
-    height: 30vw;
+    line-height: 25%;
     filter: invert(1);
 }
 
+
+.sky{
+    float: left;
+    text-align: center;
+    background-color: red;
+    height: 15vw;
+    width: 15vw;
+} 
+
+.sky img{
+    height: 40px;
+    width: 60%;
+    margin-top: 50px;
+    filter: invert(1);
+}
+
+.orange{
+    float: left;
+    text-align: center;
+    background-color: orange;
+    height: 15vw;
+    width: 15vw;
+}
+
+.orange img{
+    height: 40px;
+    width: 60%;
+    filter: invert(1);
+}
+
+
+
+
+
+/* center */
+.col-side-c{
+    float: left;
+   width: calc(100% - 60vw);
+    height: 30vw;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+
+.content-center{
+    width: 80%;
+}
+
+.content-center p{
+    padding-top: 50px;
+}
+
+.content-center span{
+    display: inline-block;
+}
+
+
+.col-side-c img{
+    width: 80px;
+    display: inline-block;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+/* center */
+
+/* right */
 .col-side-dx{
     float: right;
     width: 30vw;
-    height: 30vw;
-    filter: invert(1);
-    
+    height: 30vw;  
 }
 
-.img-side{
-    width: 100%;
-    
+.red{
+    float: left;
+    background-color: red;
+    vertical-align: middle;
+    height: 15vw;
+    width: 15vw;
+
 }
+
+.royal{
+    float: left;
+    text-align: center;
+    background-color: royalblue;
+    height: 15vw;
+    width: 15vw;
+}
+
+.royal img{
+    width: 60%;
+    line-height: 100px;
+    filter: invert(1); 
+}
+
+.red img{
+    height: 40px;
+    width: 60%;
+    line-height: 25%;
+    filter: invert(1); 
+}
+
+
+.blue{
+    float: left;
+    text-align: center;
+    background-color: blue;
+    height: 15vw;
+    width: 15vw;
+} 
+
+.blue img{
+    height: 40px;
+    width: 60%;
+    margin-top: 50px;
+    filter: invert(1); 
+}
+
+.yellow{
+    float: left;
+    text-align: center;
+    background-color: yellow;
+    height: 15vw;
+    width: 15vw;
+}
+
+.yellow img{
+    height: 40px;
+    width: 60%;
+    filter: invert(1); 
+}
+
+
+
+
+/* right */
+
 
 
 
@@ -503,16 +629,18 @@ i.fas.fa-pen{
 
 .text-banner2{
     position: relative;
-    height: 300px;
+    top: 100px;
+    height: 400px;
     width: 100%;
     background-color: royalblue;
+    padding-bottom: 100px;
 }
 
 .text-banner{
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    float: left;
     left: 15%;
-    padding-top: 100px;
+    bottom: 50%;
     width: 40%;
     font-size: 40px;
     font-weight: bolder;
@@ -548,6 +676,7 @@ i.fas.fa-pen{
     left: -150px;
     margin-top: 100px;
     padding-bottom: 50px;
+    padding-top: 50px;
     width: 40%;
     font-size: 30px;
     font-weight: bolder;
