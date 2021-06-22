@@ -163,12 +163,17 @@ form{
     margin-top: 200px;
     margin-left: 80px;
     width:70%;
-    height: 500px;
 }
 /*/ colums */
 
 .col4{
-    height: 100%;
+    position: relative;
+    height: 150px;
+    width: 67%;
+    left: 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: 1px solid grey ;
 }
 
 .col4 span{
@@ -178,6 +183,8 @@ form{
     display: inline-block;
     padding: 10px;
 }
+
+
 
 
 /* testo colonna 4 */
@@ -205,11 +212,6 @@ form{
     padding: 3px 10px 3px 10px;
 }
 
-.cont-4{
-    border: 1px solid grey;
-    height: 100%;
-    width: 100%;
-}
 
 
 
@@ -433,6 +435,9 @@ i.fas.fa-pen{
 /* /float side title */
 
 /* blocchi sponsor */
+
+
+
 .row::after{
     content: "";
     display: table;
@@ -447,17 +452,44 @@ i.fas.fa-pen{
 
 .col-side-sx{
     float: left;
-    width: 30%;
+    width: 30vw;
+    height: 30vw;
+    filter: invert(1);
+}
+
+.green{
+    position: relative;
+    top: 50px;
+}
+
+.purple{
+    position: relative;
+    top: 50px;  
+}
+
+.purple img{
+    height: 40px;
+    width: 60%;
+}
+
+.green img{
+    height: 40px;
+    width: 60%;
 }
 
 .col-side-c{
     float: left;
-    width: 40%;
+    width: 40%;  width: 30vw;
+    height: 30vw;
+    filter: invert(1);
 }
 
 .col-side-dx{
     float: right;
-    width: 30%;
+    width: 30vw;
+    height: 30vw;
+    filter: invert(1);
+    
 }
 
 .img-side{
@@ -502,6 +534,94 @@ i.fas.fa-pen{
     font-size: 15px;
     font-weight: bolder;
 }
+
+
+/* questions */
+.questions{
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+.title-questions{
+    position: relative;
+    left: -150px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    width: 40%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+.questions-common{
+    position: relative;
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-top: 1px solid grey;
+}
+
+span .fas.fa-caret-down{
+    position: absolute;
+   right: 10px;
+}
+
+footer{
+    background-color: black;
+}
+ 
+footer ul li{
+    color: white;
+}
+
+footer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer ul{
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 100px;
+}
+
+footer ul:first-child{
+    border-bottom: 1px solid grey;
+}
+
+footer ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer ul li:first-child{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-ita{
+    height: 50px;
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer-ita a{
+    color: white;
+}
+
+
 
 
 
